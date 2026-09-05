@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 
 import UserList from "./components/UserList";
+import ControlledLoginForm from "./components/login/ControlledLoginForm";
 
 import './App.css'
 
@@ -12,7 +13,11 @@ function App() {
 
   return (
     <>
+    <ControlledLoginForm />
+    -----------------------------------------------------------------------------------
      <UserList />
+     <br/>
+    -----------------------------------------------------------------------------------
       <section id="center">
         <button
           type="button"
