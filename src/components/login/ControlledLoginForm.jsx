@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-const ControlledLoginForm = () => {
+const ControlledLoginForm = (props) => {
+
+    const { setValue } = props;
 
     const [email, setEmail] = useState('');
 
@@ -8,6 +10,7 @@ const ControlledLoginForm = () => {
     const submitHandler = (e) => {
         e.preventDefault();
         console.log("email value is - ", email);
+        setValue(email);
     };
 
     return (

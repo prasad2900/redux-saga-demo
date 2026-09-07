@@ -9,11 +9,13 @@ import ControlledLoginForm from "./components/login/ControlledLoginForm";
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [value, setValue] = useState('');
 
   return (
     <>
-    <ControlledLoginForm />
+    <ControlledLoginForm setValue={setValue} />
+    <p>Controlled Form email value is - {value} </p>
     -----------------------------------------------------------------------------------
      <UserList />
      <br/>
